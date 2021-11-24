@@ -1,0 +1,265 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url('../assets/fonts/Montserrat-Light.woff2') format('woff2'),
+         url('../assets/fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+    @font-face{
+    font-family: "Montserrat";
+    src: url('../assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  height: 100%;
+ overflow: hidden;
+ font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.p5Canvas{
+  transform: scaleX(-1) scale(0.2) translate(-147rem, -435vh); 
+  transform-origin: top left;
+  background-image: url("../assets/img/revflag.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+
+.strong{
+  font-weight: bold;
+}
+
+
+p{
+  line-height: 1.1;
+}
+
+.container{
+  padding: 2rem;
+  background-image: url("../assets/img/bg-desktop2.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.golfer{
+  margin-left: 10rem;
+  margin-top: 19rem;
+  position: relative;
+}
+
+.golfer-arms{
+   margin-top: 1rem;
+  position: absolute;
+  top: 9rem;
+  left: -1.7rem;
+  transform-origin: top center;
+ 
+}
+
+.golfer-head{
+  margin-bottom:-0.5rem;
+  margin-left: -1.3rem;
+  height: 10rem;
+}
+
+.play-field{
+  display: flex;
+}
+
+.canvas{
+ transform: translate(-4.8rem, -5.6rem);
+}
+
+.main-title{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #3C3B6E;
+  font-size: 5rem;
+}
+
+.game-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.camera-view{
+  width: 29rem;
+  height: 22.5rem;
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  color: #B22234;
+  font-weight: bold;
+}
+
+.dialog-box{
+  background-color: #B22234;
+  margin-top: 2rem;
+  width: 30vw;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+   z-index: 1;
+}
+
+.no-display{
+  display: none;
+}
+
+.loader{
+margin-top: 1rem;
+}
+
+.loader-img{
+  animation: rotation 2s infinite ease;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.status{
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+.sub-status{
+  margin-top: 1rem;
+}
+
+.player-stats{
+  background-color: #3C3B6E;
+  height: 20rem;
+  width: 30rem;
+  color: white;
+   margin-top: 2rem;
+   margin-right: 1rem;
+   padding: 1.5rem;
+   z-index: 1;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.level{
+  text-transform: uppercase;
+}
+
+.scorebord{
+margin-bottom: 1rem;
+}
+
+
+
+.container-moon{
+    background-image: url("../assets/img/bg-desktop-moon.svg");
+}
+
+.play-again-button{
+  background-color: #3C3B6E;
+  padding: 1.6rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  display: block;
+}
+
+.stats{
+  line-height: 1.2;
+}
+
+.instructions-link{
+  border-top: 0.1rem white solid;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.instructions-link a{
+  color: white;
+}
+
+.dialog-box-intructions{
+height: fit-content;
+width: 110rem;
+margin: 3rem auto;
+padding: 1rem 3rem ;
+font-size: 1.4rem;
+}
+
+.instruction-para{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 1.2;
+ 
+}
+
+.sub-title{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.instruction-img-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.instruction-img-container div{
+ background-color: #3C3B6E;
+  display: flex;
+  width: 30rem
+ 
+}
+
+.instruction-img-para{
+  margin: 1rem;
+}
+
+.winner-head{
+  margin-top: 1rem;
+}
+
+.link-me{
+  color: #B22234;
+  margin-left: 0.4rem;
+}
